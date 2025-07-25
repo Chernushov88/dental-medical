@@ -7,9 +7,8 @@
             <img src="~/assets/images/logo.svg" alt="">
         </nuxt-link>
 
-        <div>
-            Nav Bar
-        </div>
+        <NavBarComponent />
+        
         <div>
             Auth Bar
         </div>
