@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col min-h-screen">
+    <div class="flex flex-col min-h-screen amx-w-max mx-auto">
         <HeaderComponent />
 
         <main class="flex-auto">
