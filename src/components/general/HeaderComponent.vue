@@ -2,18 +2,18 @@
 
 </script>
 <template>
-    <header class="max-w-content w-full mx-auto px-10 py-4.5 bg-blue-light rounded-lg my-10 flex atems-center justify-between">
+    <header class="max-w-content w-full mx-auto px-5 lg:px-10 lg:py-4.5 lg:bg-blue-light rounded-lg my-10 flex atems-center justify-between">
         <LogoComponent />       
 
-        <NavBarComponent />
+        <NavBarComponent class="hidden lg:flex"/>
 
-        <div class="flex items-center gap-x-5">
+        <div class="hidden lg:flex items-center gap-x-5">
             <UserDropdownComponent />
             <ButtonComponent>Bok Now</ButtonComponent>
-        </div>        
+        </div>  
         
-        <div>
-            Auth Bar
+         <div class="lg:hidden bg-blue rounded-lg h-12 w-12 flex items-center justify-center">
+            <img src="~/assets/images/icons/menu-toggle-icon.svg" alt="Menu toggle icon">
         </div>
     </header>
 </template>
