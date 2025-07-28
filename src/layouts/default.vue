@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col min-h-screen max-w-max mx-auto px-4">
+    <div class="default-layout flex flex-col min-h-screen max-w-max mx-auto px-4">
         <HeaderComponent />
 
         <main class="flex-auto">
@@ -15,3 +15,9 @@
 
     </div>
 </template>
+
+<style>
+.default-layout {
+    @apply text-blue-dark;
+}
+</style>
