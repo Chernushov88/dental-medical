@@ -6,6 +6,12 @@
             <FooterNavBarComponent />            
         </div>
         <div class="border-t border-blue-darkk"></div>
+        <div class="flex items-center justify-between pt-8">
+            <div class="text-b3">© 2025 Dental Medical. All rights reserved.</div>
+            <div>
+                <SocialMediaListComponent />    
+            </div>
+        </div>
     </footer>
 </template>
 
