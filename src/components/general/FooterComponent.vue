@@ -1,6 +1,6 @@
 <template>
-    <footer class="max-x-content w-full pb-8">
-        <div class="flex items-center justify-between pb12">
+    <footer class="max-x-content w-full pb-8 mx-auto">
+        <div class="flex items-center justify-between pb-12">
             <LogoComponent />
 
             <FooterNavBarComponent />            

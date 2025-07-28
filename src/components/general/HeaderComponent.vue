@@ -1,27 +1,26 @@
-<script setup lang="ts">
-
-</script>
 <template>
     <header class="max-w-content w-full mx-auto px-5 lg:px-10 lg:py-4.5 lg:bg-blue-light rounded-lg my-10 flex atems-center justify-between">
-        <LogoComponent />       
+        <LogoComponent class="hidden lg:block"/>     
+
+        <HeaderMobileVisionComponent 
+            class="lg:hidden" 
+            @click-toggle="toggleMobileMenu" />
 
         <NavBarComponent class="hidden lg:flex"/>
 
         <div class="hidden lg:flex items-center gap-x-5">
             <UserDropdownComponent />
             <ButtonComponent>Bok Now</ButtonComponent>
-        </div>  
-        
-         <div class="lg:hidden bg-blue rounded-lg h-12 w-12 flex items-center justify-center">
-            <img src="~/assets/images/icons/menu-toggle-icon.svg" alt="Menu toggle icon">
-        </div>
+        </div>       
+
+        <MobileMenuComponent v-model="activeMobileMenu" />
     </header>
 </template>
 
 <script setup lang="ts">
+const activeMobileMenu = ref(false);
 
+function toggleMobileMenu() {
+    activeMobileMenu.value = !activeMobileMenu.value;
+}
 </script>
-
-<style scoped>
-
-</style>
