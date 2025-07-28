@@ -21,7 +21,7 @@ const route = useRoute()
 
 const navItems = ref([
     {
-        active: true,
+        active: false,
         id: '1',
         title: 'Home',
         route: '/',
