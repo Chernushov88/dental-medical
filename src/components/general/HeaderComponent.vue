@@ -8,7 +8,12 @@
         </nuxt-link>
 
         <NavBarComponent />
-        <UserDropdownComponent />
+
+        <div class="flex items-center gap-x-5">
+            <UserDropdownComponent />
+            <ButtonComponent>Bok Now</ButtonComponent>
+        </div>
+        
         
         <div>
             Auth Bar
