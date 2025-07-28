@@ -17,56 +17,27 @@
 </template>
 
 <script setup lang="ts">
+import { useNavStore } from '~/store/useNavStore';
+
 const route = useRoute()
 
-const navItems = ref([
-    {
-        active: false,
-        id: '1',
-        title: 'Home',
-        route: '/',
-    },
-    {
-        id: '2',
-        title: 'Services',
-        route: '/services',
-    },
-    {
-        id: '3',
-        title: 'Blogs',
-        route: '/blogs',
-    },
-    {
-        id: '4',
-        title: 'About',
-        route: '/about',
-    },
-    {
-        id: '5',
-        title: 'Contacts',
-        route: '/contacts',
-    }
-])
+const { navItems } = storeToRefs(useNavStore());
 
 const changeRoute = (id: string) => {
     navItems.value = navItems.value.map(item => ({ ...item, active: item.id === id }))
 }
 
-const checkRouterPath = () => {
+const checkRoutePath = () => {
     const id = navItems.value.find(item => item.route === route.path)?.id
     id && changeRoute(id)    
 }
 
-onMounted(() => {
-    checkRouterPath()
-})
+onMounted(checkRoutePath)
 
 const navBarActive = computed(() => {
     return navItems.value.some(item => item.active)
 })
 
-watch(() => route.path, () => {
-    checkRouterPath()
-})
+watch(() => route.path, checkRoutePath)
 
 </script>
