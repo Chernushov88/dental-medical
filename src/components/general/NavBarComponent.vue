@@ -1,6 +1,8 @@
 <template>
-    <nav class="flex items-center text-blue-dark">
-        <ul class="flex items-center gap-x-9">
+    <nav class="flex items-center text-blue-dark transition-all">
+        <ul 
+            class="flex items-center gap-x-9"
+            :class="navBarActive ? 'text-b2' : 'text-b3'">
             <li
                 v-for="item in navItems"
                 :key="item.id"
@@ -15,6 +17,8 @@
 </template>
 
 <script setup lang="ts">
+const route = useRoute()
+
 const navItems = ref([
     {
         active: true,
@@ -44,7 +48,25 @@ const navItems = ref([
     }
 ])
 
-function changeRoute(id: string) {
+const changeRoute = (id: string) => {
     navItems.value = navItems.value.map(item => ({ ...item, active: item.id === id }))
 }
+
+const checkRouterPath = () => {
+    const id = navItems.value.find(item => item.route === route.path)?.id
+    id && changeRoute(id)    
+}
+
+onMounted(() => {
+    checkRouterPath()
+})
+
+const navBarActive = computed(() => {
+    return navItems.value.some(item => item.active)
+})
+
+watch(() => route.path, () => {
+    checkRouterPath()
+})
+
 </script>
