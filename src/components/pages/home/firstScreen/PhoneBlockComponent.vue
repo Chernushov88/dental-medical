@@ -18,8 +18,4 @@
 
 <script setup lang="ts">
 defineProps<{ title: string, phone: string }>()
-const props = defineProps<{
-    title: string;
-    phone: string;
-}>();
 </script>

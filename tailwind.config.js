@@ -103,7 +103,11 @@ export default {
       },
       padding: {
         '4.5': '1.125rem'
-      }    
+      },
+      boxShadow: {
+        userMessageCard: '0 8px 40px 0 rgba(0, 0, 0, 10%)',
+        firstScreenCircle: '0 4px 4px 0 rgba(0, 0, 0, 10%)'
+      }
     },
   },
   variants: {},
