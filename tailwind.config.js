@@ -98,6 +98,9 @@ export default {
         max: '1440px',
         content: '1280px'
       },
+      width: {
+        '12.5': '0.125rem',
+      },
       padding: {
         '4.5': '1.125rem'
       }    
