@@ -2,7 +2,7 @@
     <SectionComponent class="pt-7">
         <div>
             <h1 class="text-h2 mb-8">
-                Get ready for your best ever Dental <DMarkedWord>Experience!</DMarkedWord>
+                Get ready for your best ever Dental <MarkedWord>Experience!</MarkedWord>
             </h1>
         
             <p class="text-b1 text-text">
@@ -10,7 +10,7 @@
             </p>
         
             <div class="mt-8 mb-12 flex items-center gap-x-4">
-                <DButton>Get Started</DButton>
+                <ButtonComponent>Get Started</ButtonComponent>
             
                 <PhoneBlock title="Dental 24H Emergency" phone="0900-78601" />
             </div>
@@ -31,7 +31,9 @@
 
 
 <script setup lang="ts">
+
 import UserMessageCard from '@/components/universal/UserMessageCardComponent.vue';
+import MarkedWord from '@/components/universal/MarkedWordComponent.vue';
 import PhoneBlock from './PhoneBlockComponent.vue';
 import PhotoSection from './PhotoSectionComponent.vue';
 </script>
