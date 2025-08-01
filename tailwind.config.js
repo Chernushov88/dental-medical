@@ -99,7 +99,7 @@ export default {
         content: '1280px'
       },
       width: {
-        '12.5': '0.125rem',
+        '12.5': '3.125rem',
       },
       padding: {
         '4.5': '1.125rem'

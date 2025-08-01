@@ -1,8 +1,10 @@
 <template>
-    <SectionComponent class="pt-7">
+    <SectionComponent class="pt-7 flex flex-col lg:flex-row lg:items-end">
         <div>
-            <h1 class="text-h2 mb-8">
-                Get ready for your best ever Dental <MarkedWord>Experience!</MarkedWord>
+            <h1 class="text-h2 lg:text-h1 mb-8">
+                Get ready for your best ever 
+                <span class="lg:hidden">Dental</span> <MarkedWord class="lg:hidden">Experience!</MarkedWord>
+                <MarkedWord class="hidden lg:inline-block">Dental Experience!</MarkedWord>
             </h1>
         
             <p class="text-b1 text-text">
