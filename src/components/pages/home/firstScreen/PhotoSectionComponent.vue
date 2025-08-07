@@ -37,11 +37,31 @@
         </div>
 
         <!-- TOOTHS -->
-        <ToothIcon class="absolute top-8 left-8" />
-        <ToothIcon class="absolute -top-0 left-3/4 -rotate-12" />
-        <ToothIcon class="absolute top-32 left-12 -rotate-45" />
-        <ToothIcon class="absolute top-1/4 right-5 scale-90" />
-        <ToothIcon class="absolute bottom-24 right-10 -rotate-12" />
+        <div
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[60%]
+                rounded-full w-11/12 aspect-square rotate-12"
+        >
+            <div class="animate-spin-slow h-full w-full absolute">
+                <div class="absolute top-0 left-1/2 -translate-y-1/2 -rotate-45"><ToothIcon class="animate-spin-slow-reverse" /></div>
+                <div class="absolute bottom-0 left-1/2 translate-y-1/2"><ToothIcon class="animate-spin-slow-reverse" /></div>
+                <div class="absolute top-1/2 right-0 rotate-12"><ToothIcon class="animate-spin-slow-reverse" /></div>
+                <div class="absolute top-1/3 left-0 -translate-x-1/2 -rotate-45"><ToothIcon class="animate-spin-slow-reverse" /></div>
+            </div>
+        </div>
+                <div
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[60%]
+                rounded-full w-11/12 aspect-square rotate-12"
+        >
+            <div class="animate-spin-slow-reverse h-full w-full absolute">
+                <div class="absolute top-1/3 left-3/4 -translate-y-10 scale-90 -rotate-45">
+                    <ToothIcon class="animate-spin-slow" />
+                </div>
+
+                <div class="absolute top-1/3 left-1/4 -translate-x-12 translate-y-24 scale-90 -rotate-45">
+                    <ToothIcon class="animate-spin-slow" />
+                </div>
+            </div>
+        </div>
 
         <!-- PHOTO -->
         <div class="relative w-full overflow-hidden">
