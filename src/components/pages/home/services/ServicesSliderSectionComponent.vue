@@ -1,10 +1,9 @@
 <template>
-    <SectionComponent class="bg-blue-light py-12.5 px-5">
+    <SectionComponent class="bg-blue-light py-12.5 px-5 mb-40 lg:rounded-2lg lg:px-8 flex flex-col lg:flex-row gap-6">
         <ServiceCard 
             v-for="item in items"
             :key="item.title"
             :item="item"
-            class="mb-5"
         />
     </SectionComponent>
 </template>
