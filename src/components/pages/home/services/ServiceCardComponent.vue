@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col items-center py-8 px-9 bg-white rounded-2lg">
-        <div class="w-[70px] aspect-square rounded-full bg-blue flex items-center justify-center">
+        <div class="w-[70px] aspect-square rounded-full bg-blue lg:bg-blue-sky flex items-center justify-center">
             <img :src="`/icons/services/${item.icon}.svg`" :alt="`${item.title} icon`">
         </div>
 
@@ -8,23 +8,19 @@
             {{ item.title }}
         </h3>
 
-        <p class="text-b1 text-text">{{ item.description }}</p>
+        <p class="text-b1 text-text mb-4">{{ item.description }}</p>
 
-        <nuxt-link :to="item.route">
-            <span class="text-base underline mr-2.5">Learn More</span>
+        <nuxt-link :to="item.route" class="flex items-center justify-center">
+            <span class="text-base underline hover:no-underline transition-all duration-1000 mr-2.5">Learn More</span>
 
-            <img src="~/assets/icons/arrorRightCircle.svg" alt="Arror right" />
+            <img src="~/assets/images/icons/arrorRightCircle.svg" alt="Arror right" />
         </nuxt-link>
     </div>
 </template>
 
 <script setup lang="ts">
-defineProps<{
-    item: {
-        icon: 'smile' | 'implant' | 'teeth'
-        title: string
-        description: string
-        route: string
-    }
-}>()
+
+import type { ServiceItem } from '~/types/services'
+
+defineProps<{ item: ServiceItem }>()
 </script>

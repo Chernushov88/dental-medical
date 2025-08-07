@@ -52,7 +52,7 @@ export default {
           }
         ],
         'h4': [
-          '2.25rem',
+          '1.5rem',
           {
             lineHeight: '1.2',
             letterSpacing: '0',
