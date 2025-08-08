@@ -1,6 +1,6 @@
 <template>
   <SectionComponent
-    class="bg-blue-light py-12.5 px-5 mb-40 lg:rounded-2lg lg:px-8 flex flex-col lg:flex-row gap-6"
+    class="bg-blue-light pt-12.5 pb-8 !px-0 lg:rounded-2lg lg:!px-8 flex flex-col lg:flex-row gap-6"
   >
     <div class="lg:hidden">
       <ClientOnly>
