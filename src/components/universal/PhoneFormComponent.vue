@@ -1,7 +1,3 @@
-<script setup lang="ts">
-  const phone = ref('')
-</script>
-
 <template>
   <div class="flex">
     <div
@@ -22,3 +18,7 @@
     <ButtonComponenr class="rounded-s-none">Submit</ButtonComponenr>
   </div>
 </template>
+
+<script setup lang="ts">
+  const phone = ref('')
+</script>
