@@ -4,7 +4,7 @@
       class="flex items-center gap-2.5 w-full rounded-s-2lg border border-gray-100 pl-5"
     >
       <div class="h-6 aspect-square">
-        <img src="~/assets/images/icons/call.svg" alt="Call icon" />
+        <img src="@/assets/images/icons/call.svg" alt="Call icon" />
       </div>
 
       <input
@@ -15,7 +15,7 @@
       />
     </div>
 
-    <ButtonComponenr class="rounded-s-none">Submit</ButtonComponenr>
+    <ButtonComponent class="rounded-s-none">Submit</ButtonComponent>
   </div>
 </template>
 

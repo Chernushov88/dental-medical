@@ -40,11 +40,6 @@
       class="hidden lg:flex"
     />
   </SectionComponent>
-
-  <!-- Go back one slide -->
-  <button @click="swiper.prev()">Prev</button>
-  <!-- Go forward one slide -->
-  <button @click="swiper.next()">Next</button>
 </template>
 
 <script setup lang="ts">
@@ -86,7 +81,5 @@
     slidesPerView: 1,
   })
 
-  onMounted(() => {
-    swiper.instance
-  })
+  onMounted(() => swiper.instance)
 </script>

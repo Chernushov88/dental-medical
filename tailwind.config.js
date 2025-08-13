@@ -2,13 +2,13 @@
 export default {
   content: [],
   theme: {
-    extend: {},
-  },
-  theme: {
     fontFamily: {
       body: 'GeneralSans'
     },
     extend: {
+      spacing: {
+        '17.5': '4.375rem'
+      },
       borderRadius: {
         '2lg': '10px',
       },
@@ -24,19 +24,22 @@ export default {
         success: '#17bf28',
         warnint: '#ec942c',
         error: '#e52323',
-        grey: '#aeaeae'
+        gray: {
+          DEFAULT: '#aeaeae',
+          100: '#cecece'
+        }
       },
       fontSize: {
         'h1': [
           '3.875rem',
           {
             lineHeight: '1.2',
-            letterSpacing: '-2px',
+            letterSpacing: '-2%',
             fontWeight: '600',
           }
         ],
         'h2': [
-          '2.5rem',
+          '2.625rem',
           {
             lineHeight: '1.25',
             letterSpacing: '0',
@@ -64,7 +67,7 @@ export default {
           '1.125rem',
           {
             lineHeight: '1.55',
-            letterSpacing: '1.5px',
+            letterSpacing: '1.5%',
             fontWeight: '400',
           }
         ],
@@ -73,7 +76,7 @@ export default {
           '1rem',
           {
             lineHeight: '1.55',
-            letterSpacing: '1.5px',
+            letterSpacing: '1.5%',
             fontWeight: '400',
           }
         ],
@@ -83,7 +86,7 @@ export default {
           '0.875rem',
           {
             lineHeight: '1.55',
-            letterSpacing: '2px',
+            letterSpacing: '2%',
             fontWeight: '400',
           }
         ],
@@ -92,7 +95,7 @@ export default {
           '0.75rem',
           {
             lineHeight: '1.55',
-            letterSpacing: '1.5px',
+            letterSpacing: '1.5%',
             fontWeight: '400',
           }
         ],
@@ -103,10 +106,10 @@ export default {
       },
       width: {
         '12.5': '3.125rem',
+        '94': '23.5rem'
       },
       padding: {
-        '4.5': '1.125rem',
-        '12.5': '3.125rem',
+        '4.5': '1.125rem'
       },
       boxShadow: {
         userMessageCard: '0 8px 40px 0 rgba(0, 0, 0, 10%)',
@@ -124,7 +127,5 @@ export default {
       }
     },
   },
-  variants: {},
   plugins: [],
 }
-
