@@ -1,17 +1,17 @@
 <template>
     <SectionComponent class="pt-24 pb-17.5 flex flex-col gap-12 lg:flex-row lg:items-end lg:gap-40 lg:!px-17.5">
         <div>
-            <h2 class="text-h3 lg:text-h2 mb-4 lg:mb-5">
+            <SectionHeadingComponent>   
                 Leave your worries at the door and enjoy a 
                 <MarkedWordComponent class="lg:hidden">healthier</MarkedWordComponent>
                 <span class="hidden lg:inline-block">healthier</span>, more 
                 <MarkedWordComponent class="hidden lg:inline-block">precise smile</MarkedWordComponent>
                 <span class="lg:hidden">precise smile</span>
-            </h2>
+            </SectionHeadingComponent>
 
-            <p class="text-b1 mb-7 lg:mb-10">
+            <DescriptionWrapperComponent>
                 We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.
-            </p>
+            </DescriptionWrapperComponent>
 
             <ButtonComponent>Book an appointment</ButtonComponent>
         </div>
