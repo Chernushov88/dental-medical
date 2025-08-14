@@ -5,6 +5,7 @@
     <PhoneFormSectionComponent />
     <BookSection />
     <BenefitsSection />
+    <VideoSection />
   </div>
 </template>
 
@@ -13,5 +14,7 @@
   import FirstScreen from '@/components/pages/home/firstScreen/FirstScreenComponent.vue'
   import ServicesSliderSection from '@/components/pages/home/services/ServicesSliderSectionComponent.vue'
   import PhoneFormSectionComponent from '@/components/pages/home/phoneForm/PhoneFormSectionComponent.vue'
-  import BenefitsSection from '~/components/pages/home/benefits/BenefitsSectionComponent.vue'
+  import BenefitsSection from '@/components/pages/home/benefits/BenefitsSectionComponent.vue'
+  import VideoSection from '@/components/pages/home/video/VideoSectionComponent.vue';
+
 </script>
