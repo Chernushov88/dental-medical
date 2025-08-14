@@ -1,5 +1,5 @@
 <template>
-    <Section class="pt-8 lg:pt-16 pb-24 lg:pb-28">
+    <SectionComponent class="pt-8 lg:pt-16 pb-24 lg:pb-28">
         <SectionHeadingComponent class="lg:w-1/2 lg:text-center lg:mx-auto">
             We’re <MarkedWordComponent>welcoming</MarkedWordComponent> new patients and can’t wait to meet you.
         </SectionHeadingComponent>
@@ -17,5 +17,5 @@
         </div>
 
         <ButtonComponent class="mx-auto block">Watch Playlist</ButtonComponent>
-    </Section>
+    </SectionComponent>
 </template>

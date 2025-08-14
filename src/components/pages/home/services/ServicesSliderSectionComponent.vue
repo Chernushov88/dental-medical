@@ -11,25 +11,8 @@
         </swiper-container>
       </ClientOnly>
       <div class="flex items-center justify-center gap-5 mt-10">
-        <button
-          class="rounded-0 border-none bg-white py-2.5 px-6"
-          @click="swiper.prev()"
-        >
-          <img
-            src="~/assets/images/icons/arrowLeft.svg"
-            alt="Left arrow icon"
-          />
-        </button>
-
-        <button
-          class="rounded-0 border-none bg-white py-2.5 px-6"
-          @click="swiper.next()"
-        >
-          <img
-            src="~/assets/images/icons/arrowRight.svg"
-            alt="Right arrow icon"
-          />
-        </button>
+        <PrevBtnComponent @click="swiper.prev()"/>
+        <NextBtnComponent @click="swiper.next()"/>
       </div>
     </div>
 
