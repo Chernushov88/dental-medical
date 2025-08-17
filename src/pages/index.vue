@@ -7,6 +7,7 @@
     <BenefitsSection />
     <PlaylistPreview />
     <MeetSection />
+    <HappyClientsSection />
   </div>
 </template>
 
@@ -18,5 +19,6 @@
   import BenefitsSection from '@/components/pages/home/benefits/BenefitsSectionComponent.vue'
   import PlaylistPreview from '@/components/pages/home/playListPreview/PlaylistPreviewComponent.vue';
   import MeetSection from '@/components/pages/home/meet/MeetSectionComponent.vue';
+  import HappyClientsSection from '~/components/pages/home/happyClients/HappyClientsSection.vue';
 
 </script>
