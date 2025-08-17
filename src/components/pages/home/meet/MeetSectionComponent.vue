@@ -24,6 +24,11 @@
                     </swiper-slide>
                 </swiper-container>
             </client-only>
+            <SliderArrowsComponent
+                class="mt-10"
+                @prev="swiper.prev()"
+                @next="swiper.next()"
+            />
         </div>
 
         <div class="flex flex-col items-center lg:hidden">

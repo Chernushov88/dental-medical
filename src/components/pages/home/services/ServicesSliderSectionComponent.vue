@@ -10,10 +10,11 @@
           </swiper-slide>
         </swiper-container>
       </ClientOnly>
-      <div class="flex items-center justify-center gap-5 mt-10">
-        <PrevBtnComponent @click="swiper.prev()"/>
-        <NextBtnComponent @click="swiper.next()"/>
-      </div>
+     <SliderArrowsComponent
+        class="mt-10"
+        @prev="swiper.prev()"
+        @next="swiper.next()"
+      />
     </div>
 
     <ServiceCard
