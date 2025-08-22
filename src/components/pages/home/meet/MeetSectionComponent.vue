@@ -15,19 +15,29 @@
         </div>
         <div class="hidden lg:block">
             <client-only>
-                <swiper-container ref="containerRef" class="w-screen" :init="false">>
+                <swiper-container 
+                    ref="containerRef" 
+                    class="w-full" 
+                    :slides-per-view="4"
+                    :space-between="20"
+                    :loop="true"
+                    :looped-slides="items.length"
+                    :slides-per-group="1"
+                    :centered-slides="false"
+                    :speed="600"
+                    :autoplay="{ delay: 10000 }"
+                    :free-mode="true">
                     <swiper-slide 
                         v-for="(item, i) in items"
-                        :key="i"
-                        class="!w-fit"> 
+                        :key="i"> 
                         <SpecialistsCard v-bind="item" /> 
                     </swiper-slide>
                 </swiper-container>
             </client-only>
             <SliderArrowsComponent
                 class="mt-10"
-                @prev="swiper.prev()"
-                @next="swiper.next()"
+                @prev="goPrev"
+                @next="goNext"
             />
         </div>
 
@@ -48,29 +58,19 @@
     </SectionComponent>
 </template>
 
+
 <script setup lang="ts">
 import type { TeamItem } from '~/types/team';
 import SpecialistsCard from './SpecialistsCardComponent.vue';
 
+const containerRef = ref<any>(null)
 
-
-const containerRef = ref(null)
-
-const swiper = useSwiper(containerRef, {
-    loop: true,
-    slidesPerView: 4,
-    spaceBetween: 20,
-    autoplay: {
-      delay: 3000,
-    },
-    centeredSlides: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    },
-})
-
-onMounted(() => swiper.instance)
+const goPrev = () => {
+  containerRef.value?.swiper.slidePrev()
+}
+const goNext = () => {
+  containerRef.value?.swiper.slideNext()
+}
 
 const items: TeamItem[] = [
     {
@@ -122,5 +122,6 @@ const items: TeamItem[] = [
         profileLink: 'https://www.linkedin.com/'
     },
 ]
+
 
 </script>

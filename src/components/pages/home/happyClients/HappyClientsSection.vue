@@ -10,16 +10,33 @@
             </DescriptionWrapperComponent>
         </div>
 
-        <div class="mt-2 lg:mt-10 mb-10 lg:mb-12 flex items-center gap-5">
-            <HappyClientsCard
-                v-for="(item, i) in items"
-                :key="i"
-                v-bind="item"
-                :class="i && 'hidden lg:block'"
+        <div class="hidden lg:block">
+            <client-only>
+                <swiper-container 
+                    ref="containerRef" 
+                    class="w-full" 
+                    :slides-per-view="4"
+                    :space-between="20"
+                    :loop="true"
+                    :looped-slides="items.length"
+                    :slides-per-group="1"
+                    :centered-slides="false"
+                    :speed="600"
+                    :autoplay="{ delay: 8000 }"
+                    :free-mode="true">
+                    <swiper-slide 
+                        v-for="(item, i) in items"
+                        :key="i"> 
+                        <HappyClientsCard v-bind="item" /> 
+                    </swiper-slide>
+                </swiper-container>
+            </client-only>
+            <SliderArrowsComponent
+                class="mt-10"
+                @prev="goPrev"
+                @next="goNext"
             />
         </div>
-
-        <SliderArrowsComponent dark-mode />
     </SectionComponent>
 </template>
 
@@ -27,7 +44,16 @@
 import type { ReviewsItem } from '~/types/reviews';
 import HappyClientsCard from './HappyClientsCard.vue';
 
-const items: ReviewsItem[] = [
+
+const containerRef = ref<any>(null)
+const goPrev = () => {
+  containerRef.value?.swiper.slidePrev()
+}
+const goNext = () => {
+  containerRef.value?.swiper.slideNext()
+}
+
+const items: ReviewsItem[] = [    
     {
         name: 'Thomas daniel',
         photo: './pages/home/clients/client1.png',
