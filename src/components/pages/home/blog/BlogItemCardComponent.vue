@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import type { PostItem } from '~/types/blog'
+import type { PostItem } from '~/types/blog/'
 
 defineProps<PostItem>()
 </script>
