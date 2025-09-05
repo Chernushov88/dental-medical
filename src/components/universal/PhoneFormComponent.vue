@@ -8,7 +8,7 @@
       </div>
 
       <input
-        v-model="phone"
+        v-model="modelValue"
         type="number"
         placeholder="Enter your Phone Number"
         class="w-full"
@@ -20,5 +20,6 @@
 </template>
 
 <script setup lang="ts">
-  const phone = ref('')
+const modelValue = defineModel('modelValue', { default: '' })
+console.log(' modelValue: ', modelValue)
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <SectionComponent class="bg-blue-light py-20 lg:!px-28 lg:!py-14 lg:flex lg:flex-row-reverse lg:justify-between">
+    <SectionComponent class="bg-blue-light py-20 lg:!px-28 lg:!py-14 lg:flex lg:flex-row-reverse lg:justify-between  mb-20">
         <div class="mb-12 lg:mb-0 lg:max-w-[500px]">
             <SectionHeadingComponent class="max-w-[332px] lg:max-w-[500px]">
                 Why choose <MarkedWordComponent>Smile</MarkedWordComponent> for all your dental treatments?

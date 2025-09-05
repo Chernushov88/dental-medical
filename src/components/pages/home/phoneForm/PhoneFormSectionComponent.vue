@@ -14,7 +14,7 @@
         book yourself.
       </DescriptionWrapperComponent>
 
-      <PhoneFormComponent />
+      <PhoneFormComponent v-model="phone" />
     </div>
 
     <div class="shrink-0">
@@ -25,3 +25,8 @@
     </div>
   </SectionComponent>
 </template>
+
+
+<script setup lang="ts">
+  const phone = ref('')
+</script>
