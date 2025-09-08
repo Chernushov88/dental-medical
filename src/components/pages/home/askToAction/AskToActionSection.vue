@@ -1,6 +1,6 @@
 <template>
     <SectionComponent class="bg-blue-dark lg:rounded-xl py-16 lg:py-12 lg:px-14 !max-w-[1064px] mb-25">
-        <div class="flex flex-col lg:flex-roe items-center gap-12">
+        <div class="flex flex-col lg:flex-roe items-center gap-12 text-center">
             <div>
                 <MarkedWordComponent>
                     Dental Website that's gonna shake the game rules up.

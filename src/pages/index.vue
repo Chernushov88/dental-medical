@@ -5,6 +5,7 @@
     <PhoneFormSection />
     <BookSection />
     <AsksSection />
+    <AskToActionSection />
     <BenefitsSection />
     <PlaylistPreview />
     <MeetSection />
@@ -21,6 +22,7 @@
   import PlaylistPreview from '@/components/pages/home/playListPreview/PlaylistPreviewComponent.vue';
   import MeetSection from '@/components/pages/home/meet/MeetSectionComponent.vue';
   import HappyClientsSection from '~/components/pages/home/happyClients/HappyClientsSection.vue';
-import AsksSection from '~/components/pages/home/asks/AsksSectionComponent.vue';
+  import AsksSection from '~/components/pages/home/asks/AsksSectionComponent.vue';
+import AskToActionSection from '~/components/pages/home/askToAction/AskToActionSection.vue';
 
 </script>

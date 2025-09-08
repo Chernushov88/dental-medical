@@ -18,5 +18,11 @@ export default defineNuxtConfig({
         global: true,
       }
     ]
-  }
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 })
