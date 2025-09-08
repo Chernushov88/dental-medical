@@ -4,12 +4,13 @@
     <ServicesSliderSection />
     <PhoneFormSection />
     <BookSection />
-    <AsksSection />
-    <AskToActionSection />
     <BenefitsSection />
     <PlaylistPreview />
     <MeetSection />
     <HappyClientsSection />    
+
+    <AsksSection />
+    <AskToActionSection />
   </div>
 </template>
 

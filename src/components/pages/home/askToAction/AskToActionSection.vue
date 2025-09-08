@@ -1,10 +1,10 @@
 <template>
     <SectionComponent class="bg-blue-dark lg:rounded-xl py-16 lg:py-12 lg:px-14 !max-w-[1064px] mb-25">
-        <div class="flex flex-col lg:flex-roe items-center gap-12 text-center">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
             <div>
-                <MarkedWordComponent>
+                <SectionHeadingComponent class="text-white capitalize">
                     Dental Website that's gonna shake the game rules up.
-                </MarkedWordComponent>     
+                </SectionHeadingComponent>     
                 <p class="text-white max-w-[450px]">
                     We use only the best quality materials on the market in order to provide the best products to our patients.
                 </p>
