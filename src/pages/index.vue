@@ -4,10 +4,11 @@
     <ServicesSliderSection />
     <PhoneFormSection />
     <BookSection />
+    <AsksSection />
     <BenefitsSection />
     <PlaylistPreview />
     <MeetSection />
-    <HappyClientsSection />
+    <HappyClientsSection />    
   </div>
 </template>
 
@@ -20,5 +21,6 @@
   import PlaylistPreview from '@/components/pages/home/playListPreview/PlaylistPreviewComponent.vue';
   import MeetSection from '@/components/pages/home/meet/MeetSectionComponent.vue';
   import HappyClientsSection from '~/components/pages/home/happyClients/HappyClientsSection.vue';
+import AsksSection from '~/components/pages/home/asks/AsksSectionComponent.vue';
 
 </script>

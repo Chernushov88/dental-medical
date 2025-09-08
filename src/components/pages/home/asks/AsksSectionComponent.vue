@@ -1,14 +1,14 @@
 <template>
     <SectionComponent class="pt-16 lg:pt-12 pb-30">
         <div class="lg:text-center flex flex-col lg:items-center mb-2.5 lg:mb-6">
-            <SectionHeaderComponent>
+            <SectionHeadingComponent>
                 <MarkedWordComponent>
                     Frequently Ask Question
-                </MarkedWordComponent>
-                <DescriptionWrapperComponent class="max-w-[450px] text-b2">
-                    Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
-                </DescriptionWrapperComponent>
-            </SectionHeaderComponent>
+                </MarkedWordComponent>                
+            </SectionHeadingComponent>
+            <DescriptionWrapperComponent class="max-w-[450px] text-b2">
+                Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
+            </DescriptionWrapperComponent>
         </div>
 
         <div class="flex justify-center">
