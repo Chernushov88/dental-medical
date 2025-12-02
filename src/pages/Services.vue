@@ -1,13 +1,12 @@
 <template>
     <div>
-        Services
+         <ServicesMain />
     </div>
 </template>
 
-<script>
-    export default {
-        
-    }
+
+<script setup lang="ts">
+import ServicesMain from '~/components/pages/services/ServicesMainComponent.vue';
 </script>
 
 <style lang="scss" scoped>
