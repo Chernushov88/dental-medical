@@ -44,4 +44,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  devServer: {
+    port: 3003,
+    host: 'localhost'
+  }
 })
