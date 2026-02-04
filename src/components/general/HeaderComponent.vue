@@ -1,26 +1,32 @@
 <template>
-    <header class="z-20 max-w-content w-full mx-auto px-5 lg:px-10 lg:py-4.5 lg:bg-blue-light rounded-lg my-10 flex atems-center justify-between">
-        <LogoComponent class="hidden lg:block"/>     
+  <header
+    class="z-20 max-w-content w-full mx-auto px-5 lg:px-10 lg:py-4.5 rounded-lg my-10 flex atems-center justify-between transition-all duration-300"
+    :class="isWhite ? 'lg:bg-white' : 'lg:bg-blue-light'"
+  >
+    <LogoComponent class="hidden lg:block" />
 
-        <HeaderMobileVisionComponent 
-            class="lg:hidden" 
-            @click-toggle="toggleMobileMenu" />
+    <HeaderMobileVisionComponent
+      class="lg:hidden"
+      @click-toggle="toggleMobileMenu"
+    />
 
-        <NavBarComponent class="hidden lg:flex"/>
+    <NavBarComponent class="hidden lg:flex" />
 
-        <div class="hidden lg:flex items-center gap-x-5">
-            <UserDropdownComponent />
-            <ButtonComponent>Bok Now</ButtonComponent>
-        </div>       
+    <div class="hidden lg:flex items-center gap-x-5">
+      <UserDropdownComponent />
+      <ButtonComponent>Bok Now</ButtonComponent>
+    </div>
 
-        <MobileMenuComponent v-model="activeMobileMenu" />
-    </header>
+    <MobileMenuComponent v-model="activeMobileMenu" />
+  </header>
 </template>
 
 <script setup lang="ts">
 import { useMobileMenuStore } from '~/store/useMobileMenuStore';
+import { useHeader } from '#build/imports';
 
 const { activeMobileMenu } = storeToRefs(useMobileMenuStore());
 const { toggleMobileMenu } = useMobileMenuStore();
 
+const { isWhite } = useHeader();
 </script>
