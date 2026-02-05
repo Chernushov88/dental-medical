@@ -2,7 +2,7 @@
   <SectionComponent class="pt-10 pb-25 relative">
     <div
       :style="`height: calc(100% + ${scapeFromTop}px)`"
-      class="bg-gradient-to-b from-blue-light to-white absolute w-screen h-[120vh] bottom-0 left-1/2 -translate-x-1/2"
+      class="bg-gradient-to-b from-blue-light to-white absolute w-screen bottom-0 left-1/2 -translate-x-1/2"
     />
     <div ref="servicesSection" class="flex flex-col items-center">
       <SectionHeadingComponent>
