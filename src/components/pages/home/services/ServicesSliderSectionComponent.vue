@@ -10,7 +10,7 @@
           </swiper-slide>
         </swiper-container>
       </ClientOnly>
-     <SliderArrowsComponent
+      <SliderArrowsComponent
         class="mt-10"
         @prev="swiper.prev()"
         @next="swiper.next()"
@@ -18,7 +18,8 @@
     </div>
 
     <ServiceCard
-      v-for="item in items"
+      v-for="(item, i) in items"
+      v-show="i < 3"
       :key="item.title"
       :item="item"
       class="hidden lg:flex"
@@ -27,43 +28,20 @@
 </template>
 
 <script setup lang="ts">
-  import ServiceCard from '@/components/pages/home/services/ServiceCardComponent.vue'
-  import type { ServiceItem } from '~/types/services'
+import ServiceCard from '@/components/pages/home/services/ServiceCardComponent.vue';
+import { useServiceStore } from '~/store/useServicesStore.js';
+const { items } = storeToRefs(useServiceStore());
 
-  const items: ServiceItem[] = [
-    {
-      icon: 'smile',
-      title: 'Smile Design',
-      description:
-        'A smile design is a cosmetic dental procedure that enhances the appearance of your smile.',
-      route: '/',
-    },
-    {
-      icon: 'implant',
-      title: 'Dental Implants',
-      description:
-        'Dental implants are artificial tooth roots that provide a permanent base for fixed replacement teeth.',
-      route: '/',
-    },
-    {
-      icon: 'teeth',
-      title: 'Teeth Whitening',
-      description:
-        'Teeth whitening is a cosmetic procedure that lightens the color of your teeth.',
-      route: '/',
-    },
-  ]
+const containerRef = ref(null);
 
-  const containerRef = ref(null)
+const swiper = useSwiper(containerRef, {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  slidesPerView: 1,
+});
 
-  const swiper = useSwiper(containerRef, {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    slidesPerView: 1,
-  })
-
-  onMounted(() => swiper.instance)
+onMounted(() => swiper.instance);
 </script>
