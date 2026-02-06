@@ -1,6 +1,42 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/Chernushov88/dental-medical/compare/v0.0.2...v0.0.3)
+
+### 🚀 Enhancements
+
+- Create the main section for the Services page ([03a502b](https://github.com/Chernushov88/dental-medical/commit/03a502b))
+- Add the Articles section to the blogs page ([6660182](https://github.com/Chernushov88/dental-medical/commit/6660182))
+- Add the new "Contact form" section to the Services page ([4a3946c](https://github.com/Chernushov88/dental-medical/commit/4a3946c))
+- Create the universal loading component ([d1b30a0](https://github.com/Chernushov88/dental-medical/commit/d1b30a0))
+- Create the universal loading component ([005e37a](https://github.com/Chernushov88/dental-medical/commit/005e37a))
+
+### 🏡 Chore
+
+- Update changlogen data in the readme file ([85365aa](https://github.com/Chernushov88/dental-medical/commit/85365aa))
+- Update AskToAction and views to home page ([800efdc](https://github.com/Chernushov88/dental-medical/commit/800efdc))
+- Add SEO settings ([f09a202](https://github.com/Chernushov88/dental-medical/commit/f09a202))
+- Move services items from component to store ([1a502a8](https://github.com/Chernushov88/dental-medical/commit/1a502a8))
+- Use items from store in all places wherever possible ([39d7dbc](https://github.com/Chernushov88/dental-medical/commit/39d7dbc))
+- Add vueuse to the project ([66a9ec4](https://github.com/Chernushov88/dental-medical/commit/66a9ec4))
+- Add ArrowCircleRightComponent ([435c3b8](https://github.com/Chernushov88/dental-medical/commit/435c3b8))
+- Add other already implemented sections to the service page ([862b8f1](https://github.com/Chernushov88/dental-medical/commit/862b8f1))
+
+### 🎨 Styles
+
+- Add icon for search and new color ([b7bfefb](https://github.com/Chernushov88/dental-medical/commit/b7bfefb))
+- Add new bg color for the header and functionality for change it when user change the route ([063eae0](https://github.com/Chernushov88/dental-medical/commit/063eae0))
+- Fix the background height ([9e4ff92](https://github.com/Chernushov88/dental-medical/commit/9e4ff92))
+- Add transition appearing for section ([4b32a9f](https://github.com/Chernushov88/dental-medical/commit/4b32a9f))
+- Add  mobile  version to the main services section ([7da2a10](https://github.com/Chernushov88/dental-medical/commit/7da2a10))
+- Add mobile vision to the contact form section ([0eb474f](https://github.com/Chernushov88/dental-medical/commit/0eb474f))
+
+### ❤️ Contributors
+
+- Serhii Chernyshov <chernushov88@gmail.com>
+
 ## v0.0.2
 
 
