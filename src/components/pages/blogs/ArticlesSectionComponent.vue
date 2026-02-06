@@ -9,12 +9,12 @@
     </div>
 
     <div class="grid lg:grid-cols-4 gap-5 mb-10">
-      <!-- <BlogItemCardComponent
+      <BlogItemCardComponent
         v-for="(item, i) in items"
         :key="i"
         v-bind="item"
         :class="i && 'hidden lg:block'"
-      /> -->
+      />
     </div>
 
     <div class="flex justify-center">
@@ -24,8 +24,8 @@
 </template>
 
 <script setup lang="ts">
-// import { useBlogStore } from '~/store/useBlogStore';
-// import BlogItemCardComponent from '~/components/pages/home/blog/BlogItemCardComponent.vue';
+import { useBlogStore } from '~/store/useBlogStore';
+import BlogItemCardComponent from '~/components/pages/home/blog/BlogItemCardComponent.vue';
 
-// const { items } = storeToRefs(useBlogStore());
+const { items } = storeToRefs(useBlogStore());
 </script>
