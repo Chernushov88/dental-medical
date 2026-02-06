@@ -5,7 +5,19 @@
         <MarkedWordComponent>Articles</MarkedWordComponent>
       </SectionHeadingComponent>
 
-      <span>Sort by: New</span>
+      <DropDownСomponent
+        title="Sort by"
+        :options="[
+          {
+            title: 'New',
+            value: 'new',
+          },
+          {
+            title: 'Old',
+            value: 'old',
+          },
+        ]"
+      />
     </div>
 
     <div class="grid lg:grid-cols-4 gap-5 mb-10">
