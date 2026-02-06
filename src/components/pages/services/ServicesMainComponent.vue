@@ -1,9 +1,5 @@
 <template>
-  <SectionComponent class="pt-10 pb-25 relative">
-    <div
-      :style="`height: calc(100% + ${scapeFromTop}px)`"
-      class="bg-gradient-to-b from-blue-light to-white absolute w-screen bottom-0 left-1/2 -translate-x-1/2"
-    />
+  <SectionComponent class="pt-10 pb-25 relative" firs-gradient-section>
     <div ref="servicesSection" class="flex flex-col lg:items-center">
       <SectionHeadingComponent>
         <MarkedWordComponent>Services</MarkedWordComponent>
@@ -27,14 +23,4 @@
 import ServiceCard from '@/components/pages/home/services/ServiceCardComponent.vue';
 import { useServiceStore } from '~/store/useServicesStore.js';
 const { items } = storeToRefs(useServiceStore());
-
-const scapeFromTop = ref(0);
-
-const servicesSection = ref<HTMLElement>();
-
-onMounted(
-  () =>
-    servicesSection.value &&
-    (scapeFromTop.value = servicesSection.value.getBoundingClientRect().top),
-);
 </script>
