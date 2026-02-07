@@ -1,6 +1,54 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/Chernushov88/dental-medical/compare/v0.0.2...v0.0.4)
+
+### 🚀 Enhancements
+
+- Create the main section for the Services page ([65197b3](https://github.com/Chernushov88/dental-medical/commit/65197b3))
+- Add the Articles section to the blogs page ([7ff843a](https://github.com/Chernushov88/dental-medical/commit/7ff843a))
+- Add the new "Contact form" section to the Services page ([a1185d5](https://github.com/Chernushov88/dental-medical/commit/a1185d5))
+- Create the universal loading component ([4c2dee2](https://github.com/Chernushov88/dental-medical/commit/4c2dee2))
+- Create the universal loading component ([11c7916](https://github.com/Chernushov88/dental-medical/commit/11c7916))
+- Create the store for posts and move posts from everywhere to this store ([b75fa9e](https://github.com/Chernushov88/dental-medical/commit/b75fa9e))
+- Create the main section for the blogs page ([a034f9d](https://github.com/Chernushov88/dental-medical/commit/a034f9d))
+- Create the universal dropdown component ([9fdd4c2](https://github.com/Chernushov88/dental-medical/commit/9fdd4c2))
+
+### 🩹 Fixes
+
+- Add new property to the SectionComponent ([d52c70d](https://github.com/Chernushov88/dental-medical/commit/d52c70d))
+- Add fix to the background gradient position ([a957d68](https://github.com/Chernushov88/dental-medical/commit/a957d68))
+- Fix bugs with sliders ([09a49ee](https://github.com/Chernushov88/dental-medical/commit/09a49ee))
+
+### 🏡 Chore
+
+- Update changlogen data in the readme file ([85365aa](https://github.com/Chernushov88/dental-medical/commit/85365aa))
+- Update AskToAction and views to home page ([800efdc](https://github.com/Chernushov88/dental-medical/commit/800efdc))
+- Add SEO settings ([f09a202](https://github.com/Chernushov88/dental-medical/commit/f09a202))
+- Move services items from component to store ([c948445](https://github.com/Chernushov88/dental-medical/commit/c948445))
+- Use items from store in all places wherever possible ([1edfd3e](https://github.com/Chernushov88/dental-medical/commit/1edfd3e))
+- Add vueuse to the project ([cc37d82](https://github.com/Chernushov88/dental-medical/commit/cc37d82))
+- Add ArrowCircleRightComponent ([2457538](https://github.com/Chernushov88/dental-medical/commit/2457538))
+- Add other already implemented sections to the service page ([f89b5b5](https://github.com/Chernushov88/dental-medical/commit/f89b5b5))
+- **release:** V0.0.3 ([6cb823b](https://github.com/Chernushov88/dental-medical/commit/6cb823b))
+- Show new section on the blogs page ([352b628](https://github.com/Chernushov88/dental-medical/commit/352b628))
+- Add other already created section from design to the blogs page ([a7516e9](https://github.com/Chernushov88/dental-medical/commit/a7516e9))
+
+### 🎨 Styles
+
+- Add icon for search and new color ([d4a0690](https://github.com/Chernushov88/dental-medical/commit/d4a0690))
+- Add new bg color for the header and functionality for change it when user change the route ([3139673](https://github.com/Chernushov88/dental-medical/commit/3139673))
+- Fix the background height ([c35e64b](https://github.com/Chernushov88/dental-medical/commit/c35e64b))
+- Add transition appearing for section ([fcc77d4](https://github.com/Chernushov88/dental-medical/commit/fcc77d4))
+- Add  mobile  version to the main services section ([c40660d](https://github.com/Chernushov88/dental-medical/commit/c40660d))
+- Add mobile vision to the contact form section ([04613aa](https://github.com/Chernushov88/dental-medical/commit/04613aa))
+
+### ❤️ Contributors
+
+- Serhii Chernyshov <chernushov88@gmail.com>
+
 ## v0.0.3
 
 [compare changes](https://github.com/Chernushov88/dental-medical/compare/v0.0.2...v0.0.3)
