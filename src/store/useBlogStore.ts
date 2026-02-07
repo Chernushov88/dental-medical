@@ -1,5 +1,5 @@
 import type { PostItem } from "~/types/blog"
-import { defineStore } from "pinia"
+
 export const useBlogStore = defineStore('blog-store', () => {
     const items = ref<PostItem[]>([
     {

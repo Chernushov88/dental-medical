@@ -5,7 +5,7 @@
         <MarkedWordComponent>Articles</MarkedWordComponent>
       </SectionHeadingComponent>
 
-      <DropDownСomponent
+      <DropDownComponent
         title="Sort by"
         :options="[
           {

@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    app: {
+  ssr: false,
+  app: {
 		head: {
 			title: 'Chernyshov | Dental Clinic',
 			meta: [
