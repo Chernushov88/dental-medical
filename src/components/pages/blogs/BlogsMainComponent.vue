@@ -1,26 +1,26 @@
 <template>
   <SectionComponent class="pt-10 pb-25" first-gradient-section>
     <div ref="blogsSection" class="flex flex-col w-full relative mb-12">
-      <SectionHeadingComponent>
-        <MarkedWordComponent>Blogs</MarkedWordComponent>
-      </SectionHeadingComponent>
-      <DescriptionWrapperComponent
-        class="max-w-[526px] lg:text-center mb-12 lg:mb-20"
-      >
-        We use only the best quality materials on the market in order to provide
-        the best products to our patients.
-      </DescriptionWrapperComponent>
+      <div class="max-w-[526px] text-center pb-12 mx-auto">
+        <SectionHeadingComponent>
+          <MarkedWordComponent>Blogs</MarkedWordComponent>
+        </SectionHeadingComponent>
+        <DescriptionWrapperComponent class="mb-12 lg:mb-12">
+          We use only the best quality materials on the market in order to
+          provide the best products to our patients.
+        </DescriptionWrapperComponent>
 
-      <div
-        class="flex items-center px-5 py-3.5 bg-white border border-gray-50 rounded-md"
-      >
-        <img
-          src="~/assets/images/icons/search.svg"
-          alt="Search icon"
-          class="h-6 w-6 mr-2.5"
-        />
+        <div
+          class="flex items-center px-5 py-3.5 bg-white border border-gray-50 rounded-md"
+        >
+          <img
+            src="~/assets/images/icons/search.svg"
+            alt="Search icon"
+            class="h-6 w-6 mr-2.5"
+          />
 
-        <input type="text" placeholder="Search" class="placeholder:text-b2" />
+          <input type="text" placeholder="Search" class="placeholder:text-b2" />
+        </div>
       </div>
 
       <div>

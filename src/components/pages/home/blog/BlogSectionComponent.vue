@@ -3,7 +3,7 @@
     <div class="flex items-end justify-between">
       <div class="max-w-[455px]">
         <SectionHeadingComponent>
-          <MarkedWord>News & Articles</MarkedWord>
+          <MarkedWordComponent>News & Articles</MarkedWordComponent>
         </SectionHeadingComponent>
 
         <DescriptionWrapperComponent class="!mb-0">
