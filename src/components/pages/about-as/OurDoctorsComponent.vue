@@ -19,8 +19,5 @@
 <script setup>
 import { useDoctorsStore } from '~/store/useDoctorsStore';
 import DoctorCardComponent from './DoctorCardComponent.vue';
-
 const { items } = useDoctorsStore();
 </script>
-
-<style lang="scss" scoped></style>
