@@ -1,6 +1,37 @@
 # Changelog
 
 
+## v0.0.5
+
+[compare changes](https://github.com/Chernushov88/dental-medical/compare/v0.0.4...v0.0.5)
+
+### 🚀 Enhancements
+
+- Create the store for posts and move posts from everywhere to this store ([b75fa9e](https://github.com/Chernushov88/dental-medical/commit/b75fa9e))
+- Create the main section for the blogs page ([a034f9d](https://github.com/Chernushov88/dental-medical/commit/a034f9d))
+- Create the universal dropdown component ([9fdd4c2](https://github.com/Chernushov88/dental-medical/commit/9fdd4c2))
+- Imlamentation contacts type ([acb468b](https://github.com/Chernushov88/dental-medical/commit/acb468b))
+- Create the contacts page ([74b1eb9](https://github.com/Chernushov88/dental-medical/commit/74b1eb9))
+
+### 🩹 Fixes
+
+- Add new property to the SectionComponent ([d52c70d](https://github.com/Chernushov88/dental-medical/commit/d52c70d))
+- Add fix to the background gradient position ([a957d68](https://github.com/Chernushov88/dental-medical/commit/a957d68))
+- Fix bugs with sliders ([09a49ee](https://github.com/Chernushov88/dental-medical/commit/09a49ee))
+- Fix direction and width for  <Heading and Description Blog  Components ([90b62e4](https://github.com/Chernushov88/dental-medical/commit/90b62e4))
+
+### 🏡 Chore
+
+- Show new section on the blogs page ([352b628](https://github.com/Chernushov88/dental-medical/commit/352b628))
+- Add other already created section from design to the blogs page ([a7516e9](https://github.com/Chernushov88/dental-medical/commit/a7516e9))
+- **release:** V0.0.4 ([85f4624](https://github.com/Chernushov88/dental-medical/commit/85f4624))
+- Add new icons chart.svg, lacation.svg, phone.svg, time, map.png ([d568204](https://github.com/Chernushov88/dental-medical/commit/d568204))
+- Upfate foote component ([a2b9020](https://github.com/Chernushov88/dental-medical/commit/a2b9020))
+
+### ❤️ Contributors
+
+- Serhii Chernyshov <chernushov88@gmail.com>
+
 ## v0.0.4
 
 [compare changes](https://github.com/Chernushov88/dental-medical/compare/v0.0.2...v0.0.4)
