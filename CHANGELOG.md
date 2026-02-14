@@ -1,6 +1,32 @@
 # Changelog
 
 
+## v0.0.6
+
+[compare changes](https://github.com/Chernushov88/dental-medical/compare/v0.0.5...v0.0.6)
+
+### 🚀 Enhancements
+
+- Implement main section for the about us page ([35591b8](https://github.com/Chernushov88/dental-medical/commit/35591b8))
+- Implement the component to show shortly single doctor ([ee912c3](https://github.com/Chernushov88/dental-medical/commit/ee912c3))
+- Implement the component to show our doctors on the "about us" page ([4f48ddc](https://github.com/Chernushov88/dental-medical/commit/4f48ddc))
+- Implement new  RandomInfo Component ([802e30b](https://github.com/Chernushov88/dental-medical/commit/802e30b))
+
+### 🩹 Fixes
+
+- Add text size fix to page title ([3e8de14](https://github.com/Chernushov88/dental-medical/commit/3e8de14))
+- Fix bugs with router to useDoctorsStore and fix show img to about-as Components ([443fcbb](https://github.com/Chernushov88/dental-medical/commit/443fcbb))
+
+### 🏡 Chore
+
+- Add information and store to show our doctors ([fde6024](https://github.com/Chernushov88/dental-medical/commit/fde6024))
+- Add the "Our Doctors" component on the "About Us" page ([7b75c76](https://github.com/Chernushov88/dental-medical/commit/7b75c76))
+- Add already done sections to the "about us" page ([2c66065](https://github.com/Chernushov88/dental-medical/commit/2c66065))
+
+### ❤️ Contributors
+
+- Serhii Chernyshov <chernushov88@gmail.com>
+
 ## v0.0.5
 
 [compare changes](https://github.com/Chernushov88/dental-medical/compare/v0.0.4...v0.0.5)
