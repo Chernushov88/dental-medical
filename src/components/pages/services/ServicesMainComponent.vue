@@ -1,7 +1,7 @@
 <template>
   <SectionComponent class="pt-10 pb-25 relative" firs-gradient-section>
     <div ref="servicesSection" class="flex flex-col lg:items-center">
-      <SectionHeadingComponent>
+      <SectionHeadingComponent class="lg:!text-h1">
         <MarkedWordComponent>Services</MarkedWordComponent>
       </SectionHeadingComponent>
 

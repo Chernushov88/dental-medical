@@ -2,7 +2,7 @@
   <SectionComponent class="pt-10 pb-25" first-gradient-section>
     <div ref="blogsSection" class="flex flex-col w-full relative mb-12">
       <div class="max-w-[526px] text-center pb-12 mx-auto">
-        <SectionHeadingComponent>
+        <SectionHeadingComponent class="lg:!text-h1">
           <MarkedWordComponent>Blogs</MarkedWordComponent>
         </SectionHeadingComponent>
         <DescriptionWrapperComponent class="mb-12 lg:mb-12">
