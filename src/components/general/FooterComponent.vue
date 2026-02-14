@@ -1,5 +1,5 @@
 <template>
-  <footer class="max-x-content w-full lg:pb-8 mx-auto relative">
+  <footer class="max-w-content w-full lg:pb-8 mx-auto relative">
     <div class="flex items-center justify-between pb-12 lg:pb-12 px-5 lg:px-0">
       <LogoComponent />
 
@@ -27,7 +27,7 @@
       class="border-t border-gray lg:border-blue-dark flex items-center justify-between pt-2.5 lg:pt-7 mx-5 lg:mx-0 w-fit lg:w-full"
     >
       <span class="text-b3 hidden lg:inline">
-        © 2025 Dental Medical. All rights reserved.<
+        © 2026 Dental Medical. All rights reserved.
       </span>
       <div>
         <SocialMediaListComponent />
@@ -37,7 +37,7 @@
       class="lg:hidden mt-14 bg-blue-dark flex items-center justify-center p-1"
     >
       <span class="text-b3 font-medium text-white">
-        © 2025 Dental Medical. All rights reserved.<
+        © 2026 Dental Medical. All rights reserved.
       </span>
     </div>
   </footer>
