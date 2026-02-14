@@ -1,5 +1,5 @@
 <template>
-  <SectionComponent class="mt-25">
+  <SectionComponent class="mb-25">
     <div class="flex flex-col items-center mb-2.5 lg:mb-7">
       <SectionHeadingComponent class="capitalize">
         Latest
