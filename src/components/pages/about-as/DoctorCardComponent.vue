@@ -35,7 +35,7 @@ defineProps<DoctorCardItem>();
         </p>
 
         <div class="flex justify-center lg:block">
-          <DButton>Book an appointment</DButton>
+          <ButtonComponent>Book an appointment</ButtonComponent>
         </div>
       </div>
     </div>

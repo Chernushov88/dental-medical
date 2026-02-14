@@ -17,13 +17,13 @@
         book yourself.
       </DescriptionWrapperComponent>
 
-      <Button>
+      <ButtonComponent>
         <span class="flex items-center">
           <span class="mr-2">Learn More</span>
 
           <ArrowCircleRightComponent white />
         </span>
-      </Button>
+      </ButtonComponent>
     </div>
 
     <div class="max-w-[400px] shrink-0 w-full">
