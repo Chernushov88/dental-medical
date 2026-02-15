@@ -17,8 +17,8 @@
       <ButtonComponent>Bok Now</ButtonComponent>
     </div>
 
-    <div v-else>
-      <nuxt-link to="/login" class="text-h2 font-semibold mr-8 text-blue-dark">
+    <div v-else class="hidden lg:flex items-center gap-x-8">
+      <nuxt-link to="/login" class="text-h2 font-semibold text-blue-dark">
         Login
       </nuxt-link>
       <ButtonComponent to="/sing-up">Sign Up</ButtonComponent>
