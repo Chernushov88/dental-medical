@@ -30,6 +30,7 @@ export default {
           DEFAULT: '#aeaeae',
           50: '#cfcfcf',
           100: '#cecece',
+          200: '##afafaf',
         },
       },
       fontSize: {
