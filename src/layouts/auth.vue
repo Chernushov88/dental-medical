@@ -19,4 +19,8 @@ import { useTransitionSections } from '#build/imports';
 const { isReady } = useTransitionSections();
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.default-layout {
+  @apply text-blue-dark bg-white;
+}
+</style>
